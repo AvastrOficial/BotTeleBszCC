@@ -4,17 +4,10 @@ requests==2.31.0
 # Crear un entorno virtual
 python -m venv env
 
-# Activar el entorno virtual
-# En Linux/macOS:
-source env/bin/activate
-# En Windows:
-env\Scripts\activate
-
 # Instalar las dependencias desde requirements.txt
 pip install -r requirements.txt
 
 # (Opcional) Instalar pipreqs para generar requirements.txt automáticamente
-pip install pipreqs
+pip install aiohttp
 
-# (Opcional) Generar automáticamente un requirements.txt desde las importaciones reales
-pipreqs /ruta/al/proyecto
+python bot.py
